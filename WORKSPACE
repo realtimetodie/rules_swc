@@ -16,6 +16,7 @@ load("//swc:repositories.bzl", "LATEST_VERSION", "swc_register_toolchains")
 
 swc_register_toolchains(
     name = "default_swc",
+    # FIXME: demonstrate pulling whatever version we like, with manual hashes
     swc_version = LATEST_VERSION,
 )
 
