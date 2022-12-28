@@ -1,6 +1,6 @@
 # Bazel rules for swc
 
-SWC (<https://swc.rs/>) is a fast JS compiler, written in Rust.
+SWC (<https://swc.rs/>) is a fast JavaScript compiler, written in Rust.
 It performs the same work as Babel among other things, but is 20x faster.
 
 SWC is a natural fit with Bazel.
@@ -20,7 +20,7 @@ _Need help?_ This ruleset has support provided by https://aspect.dev.
 
 ## Features
 
-These rules provide a hermetic toolchain that runs `@swc/cli`, so it doesn't matter what is
+These rules provide a hermetic toolchain that runs the standalone SWC CLI, so it doesn't matter what is
 already installed on a developer's machine, they're guaranteed to get the same result.
 It caches all the tools using Bazel's downloader.
 This means that even when Bazel determines that a repository is invalidated and re-runs the setup
